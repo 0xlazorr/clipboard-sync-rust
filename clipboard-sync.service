@@ -1,11 +1,12 @@
 [Unit]
-Description=Clipboard Sync Daemon (Rust version)
+Description=Secure Clipboard Sync Daemon (Rust version)
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=%h/Documents/clipboard-sync-rust/target/release/clipboard-sync
+ExecStart=%h/repos/clipboard-sync-rust/target/release/clipboard-sync
+WorkingDirectory=%h/repos/clipboard-sync-rust
 Restart=on-failure
 RestartSec=5
 Environment=DISPLAY=:0

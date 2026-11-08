@@ -1,5 +1,8 @@
 {
+    "secret_key": "REPLACE_WITH_YOUR_SHARED_SECRET_KEY",
     "peer_ip": "192.168.1.100",
     "port": 9999,
+    "discovery_port": 9998,
+    "enable_discovery": true,
     "poll_interval": 1.0
 }
